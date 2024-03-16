@@ -11,7 +11,7 @@
     background-size: cover;
  }
  nav{
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     background-color: #333;
     font-size: 14px;
@@ -21,7 +21,6 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
-
  }
  .menu-horizontal > li > a{
     display: block;
@@ -31,13 +30,13 @@
  }
 
  .menu-horizontal > li:hover {
-    background-color: green;
+    background-color: red;
  }
  .menu-vertical{
     position:absolute;
     display: none; 
     list-style: none;
-    width: 100px;
+    width: 200px;
     background-color:rgba(0, 0, 0, .5);
  }
 
