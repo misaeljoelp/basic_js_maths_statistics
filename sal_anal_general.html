@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Matemáticas con JavaScript</title>
+  <link rel="stylesheet" href="salarios.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu-horizontal">
+          <li>
+              <a href="#">Start</a>
+              <ul class="menu-vertical">
+                  <li><a href="./index.html">Home</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Formulas</a>
+              <ul class="menu-vertical">
+                  <li><a href="./square.html">Square</a></li>
+                  <li><a href="./triangle.html">Triangle area & perimeter</a></li>
+                  <li><a href="./escalene.html">Escalene Triangle Heigh</a></li>
+                  <li><a href="./isosceles.html">Isosceles Triangle Heigh</a></li>
+                  <li><a href="./circle.html">Circle</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Discounts</a>
+              <ul class="menu-vertical">
+                  <li><a href="./descuentos.html">Price with discount</a></li>
+                  <li><a href="./descuentos-cupones.html">Coupons</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Statistics</a>
+              <ul class="menu-vertical">
+                  <li><a href="./platzimath.html">Basics</a></li>
+                  <li><a href="./promedio-ponderado.html">Weighted average</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Salary Analysis</a>
+              <ul class="menu-vertical">
+                  <li><a href="./sal_anal_empleado.html">By employee</a></li>
+                  <li><a href="./sal_anal_general.html">In general</a></li>
+                  <li><a href="./sal_anal_company.html">By company</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Project</a>
+              <ul class="menu-vertical">
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./planillas.html">Payroll</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+
+<br><br>
+  <h1 class="general-title">Salary Analysis for Employee</h1>
+  <section>
+    <form action="#">
+      <div class="typeAnalisis">
+        <label>General Analysis</label><br>
+        <label for="options">Select option</label>
+        <select name="opciones" id="options" >
+          <option value="selecciona">Choose an option</option>
+          <option value="General">General</option>
+          <option value="Top10">Top10</option>
+        </select>
+      </div>
+    </form>
+
+
+
+      <legend class="section-title">DATA</legend>
+      <div class="show-data">
+        <p class="works-employee result" id="labelName"></p>
+        <p class="works-employee result" id="labelMedianSalary"></p>
+      </div>
+
+      <P class="section-title" for="">ANALYSIS RESULTS</P>
+      <p class="lblratios result"></p>
+
+  </section>
+
+  <script src="./platzimath.js"></script>
+  <script src="./salarios.js"></script>
+  <script src="./sal_anal_general.js"></script>
+</body>
+</html>

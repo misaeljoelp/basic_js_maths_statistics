@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+/*     font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Hanken Grotesk', sans-serif;
+ }
+ body{
+    background-image: url(https://media.istockphoto.com/id/1393379249/es/foto/con-el-concepto-de-persona-que-gana-el-pago-calcule-la-n%C3%B3mina-el-salario-o-el-salario.jpg?s=1024x1024&w=is&k=20&c=k1kE-Xf8eSwHIn6do_EmPuXBHfL1aSHe9ZrZ0huwpp4=);
+    background-size: cover;
+ }
+ nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 14px;
+    margin-top: 5px;
+ }
+ .menu-horizontal{ 
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+ }
+ .menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+ }
+
+ .menu-horizontal > li:hover {
+    background-color: red;
+ }
+ .menu-vertical{
+    position:absolute;
+    display: none; 
+    list-style: none;
+    width: 200px;
+    background-color:rgba(0, 0, 0, .5);
+ }
+
+ .menu-horizontal li:hover .menu-vertical{
+    display: block;
+ }
+ .menu-vertical li:hover{
+    background-color: black;
+ }
+ .menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+ }
+ /******************************************/
+/*cuadro para mostrar datos de los empleados*/
+.general-title{
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 0, 0, 0.801);
+
+}
+.dataPayroll{
+    border: 3px double rgba(255, 0, 0, 0.801);
+    min-width: 350px;
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: hwb(0 100% 0% / 0.7);
+}
+.typeAnalisis{
+    border: 1px solid rgba(255, 0, 0, 0.801);
+    margin: 5px 4px;
+}
+
+.section-title{
+    text-align: left;
+    margin-top: 10px;
+    color: rgba(255, 0, 0, 0.801);
+    font-weight: 900;
+}
+
+select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background: rgba(255, 0, 0, 0.801);
+    color: #fff;
+    border: 1px solid rgba(255, 0, 0, 0.801);
+    padding: 4px;
+    border-radius: 9px;
+    font-size: 12px;
+  }
+.data-employee{
+    height: auto;
+}
+
+.result {
+    font-size: 0.7rem;
+    border: 1px solid rgba(255, 0, 0, 0.801);
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.show-data{
+    display: flex;
+}
+button{
+    height: 35px;
+    width: 100px;
+    background: rgba(255, 0, 0, 0.801);
+    color: white;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+}
+button:hover{
+    background: white;
+    color: red;
+    border: 3px solid  red;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.boton{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0 auto;
+    width: 30%;
+    height: 80px;
+}
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gridPayroll{
+    display: grid;
+    grid-template-columns: 80px 200px repeat(18, 100px);
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+.gridCabecera{
+    display: grid;
+    grid-template-columns: 80px 200px repeat(18, 100px);
+    font-size: 10px;
+    font-weight:800;
+    color: black;
+    background-color: hwb(0 100% 0% / 0.7);
+}
+.headPayroll{
+    height: auto;
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0.801);
+    background-color: hwb(0 100% 0% / 0.7);
+}

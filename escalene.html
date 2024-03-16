@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop of maths width JavaScript</title>
+  <link rel="stylesheet" href="escalene.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu-horizontal">
+          <li>
+              <a href="#">Start</a>
+              <ul class="menu-vertical">
+                  <li><a href="./index.html">Home</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Formulas</a>
+              <ul class="menu-vertical">
+                  <li><a href="./square.html">Square</a></li>
+                  <li><a href="./triangle.html">Triangle area & perimeter</a></li>
+                  <li><a href="./escalene.html">Escalene Triangle Heigh</a></li>
+                  <li><a href="./isosceles.html">Isosceles Triangle Heigh</a></li>
+                  <li><a href="./circle.html">Circle</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Discounts</a>
+              <ul class="menu-vertical">
+                  <li><a href="./descuentos.html">Price with discount</a></li>
+                  <li><a href="./descuentos-cupones.html">Coupons</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Statistics</a>
+              <ul class="menu-vertical">
+                  <li><a href="./platzimath.html">Basics</a></li>
+                  <li><a href="./promedio-ponderado.html">Weighted average</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Salary Analysis</a>
+              <ul class="menu-vertical">
+                  <li><a href="./sal_anal_empleado.html">By employee</a></li>
+                  <li><a href="./sal_anal_general.html">In general</a></li>
+                  <li><a href="./sal_anal_company.html">By company</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Project</a>
+              <ul class="menu-vertical">
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./planillas.html">Payroll</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+<br><br>
+  <h1 class="title">How to calculate the high of a triangle escalene</h1>
+
+      <section class="container_square">
+        <div class="information_square">
+          <div class="triangle">
+            Escalene Triangle
+          </div>
+          <div class="square_info">
+            <p>When we know the lengths of all the sides of the triangle, we can calculate the height using a formula that is derived from Heron's formula.</p>
+          </div>
+        </div>
+        <div class="operation_square">
+          <div>
+            <label for="side_value1">Side a:</label>
+            <input id="side_value1" type="number">
+          </div>
+          <div>
+            <label for="side_value2">Side b:</label>
+            <input id="side_value2" type="number">
+          </div>
+          <div>
+            <label for="side_value3">Side c:</label>
+            <input id="side_value3" type="number">
+          </div>
+
+          <div class="buttons">
+            <button id="height" class="calculate">Height</button>
+          </div>
+        </div>
+        <div class="result_square">
+            <div class="outline-square">
+              <p>The result is:</p>
+              <p class="text_result">
+
+              </p>
+            </div>
+        </div>
+      </section>
+
+
+  <script src="./escalene.js"></script>
+</body>
+</html>

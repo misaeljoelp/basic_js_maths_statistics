@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Matemáticas con JavaScript</title>
+  <link rel="stylesheet" href="platzimath.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu-horizontal">
+          <li>
+              <a href="#">Start</a>
+              <ul class="menu-vertical">
+                  <li><a href="./index.html">Home</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Formulas</a>
+              <ul class="menu-vertical">
+                  <li><a href="./square.html">Square</a></li>
+                  <li><a href="./triangle.html">Triangle area & perimeter</a></li>
+                  <li><a href="./escalene.html">Escalene Triangle Heigh</a></li>
+                  <li><a href="./isosceles.html">Isosceles Triangle Heigh</a></li>
+                  <li><a href="./circle.html">Circle</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Discounts</a>
+              <ul class="menu-vertical">
+                  <li><a href="./descuentos.html">Price with discount</a></li>
+                  <li><a href="./descuentos-cupones.html">Coupons</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Statistics</a>
+              <ul class="menu-vertical">
+                  <li><a href="./platzimath.html">Basics</a></li>
+                  <li><a href="./promedio-ponderado.html">Weighted average</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Salary Analysis</a>
+              <ul class="menu-vertical">
+                  <li><a href="./sal_anal_empleado.html">By employee</a></li>
+                  <li><a href="./sal_anal_general.html">In general</a></li>
+                  <li><a href="./sal_anal_company.html">By company</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Project</a>
+              <ul class="menu-vertical">
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./planillas.html">Payroll</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+  <br><br>
+  <h1 class="general-title">Basic Statistics</h1>
+  <section>
+      <p class="section-title">Please enter the notes</p>
+      <div class="container">
+          <label for="notes">Write the note</label>
+          <div class="container-add-notes">
+            <input type="number" id="notes" class="textbox">
+            <button class="boton note" id="btnAddNote">Add</button>
+            <button class="boton note" id="btnClean">Clean</button>
+          </div>
+          <p class="result" id="printNotes">Notes</p>
+          <div class="container-buttons">
+            <button class="boton operation" id="btnAverage">Average</button>
+            <button class="boton operation" id="btnMedian">Median</button>
+            <button class="boton operation" id="btnMode">Mode</button>
+
+          </div>
+
+          <p class="result" id="printResult">Result:</p>
+      </div>
+  </section>
+
+  <script src="./platzimath.js"></script>
+  <script src="./pzmh-operaciones.js"></script>
+</body>
+</html>

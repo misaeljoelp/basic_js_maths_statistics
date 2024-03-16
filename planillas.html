@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll</title>
+  <link rel="stylesheet" href="./planillas.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu-horizontal">
+          <li>
+              <a href="#">Start</a>
+              <ul class="menu-vertical">
+                  <li><a href="./index.html">Home</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Formulas</a>
+              <ul class="menu-vertical">
+                  <li><a href="./square.html">Square</a></li>
+                  <li><a href="./triangle.html">Triangle area & perimeter</a></li>
+                  <li><a href="./escalene.html">Escalene Triangle Heigh</a></li>
+                  <li><a href="./isosceles.html">Isosceles Triangle Heigh</a></li>
+                  <li><a href="./circle.html">Circle</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Discounts</a>
+              <ul class="menu-vertical">
+                  <li><a href="./descuentos.html">Price with discount</a></li>
+                  <li><a href="./descuentos-cupones.html">Coupons</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Basic Statistics</a>
+              <ul class="menu-vertical">
+                  <li><a href="./platzimath.html">Basics</a></li>
+                  <li><a href="./promedio-ponderado.html">Weighted average</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Salary Analysis</a>
+              <ul class="menu-vertical">
+                  <li><a href="./sal_anal_empleado.html">By employee</a></li>
+                  <li><a href="./sal_anal_general.html">In general</a></li>
+                  <li><a href="./sal_anal_company.html">By company</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Project</a>
+              <ul class="menu-vertical">
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./planillas.html">Payroll</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+
+<br><br>
+  <h2 class="general-title">Data to generate Payroll</h2>
+  <section class="dataPayroll">
+    <form action="#">
+      <div class="typeAnalisis">
+        <label>Data employee</label><br>
+        <label for="employees">Select employee</label>
+        <select name="opciones" id="employees" >
+          <option value="selecciona">Choose an employee</option>
+          <option value="12345670">SANTANA ROJAS HILARIO</option>
+          <option value="12345671">CASAS RODRIGUEZ ITALO</option>
+          <option value="12345672">ROSALES MATOS ESMERALDA</option>
+          <option value="12345673">ZARATE LUNA LUCIA</option>
+          <option value="12345674">FERNANDEZ LUNA MAEL</option>
+          <option value="12345675">ESPINOZA LUNA SOFIA</option>
+          <option value="12345676">DURAN SANTOS LAURA</option>
+          <option value="12345677">CASTRO SANTOS MANUEL</option>
+          <option value="12345678">ALIAGA SANTOS JUAN</option>
+          <option value="12345679">BERNAOLA SANTOS PEDRO</option>
+        </select>
+      </div>
+    </form>
+    <div class="cabecera">
+      <legend class="section-title">DATA</legend>
+      <legend class="section-title">PENSION SYSTEM DATA</legend>
+    </div>
+
+    <div class="show-data">
+      <p class="data-employee result" id="labelDni"></p>
+      <p class="data-employee result" id="labelName"></p>
+      <p class="data-employee result" id="labelTipo"></p>
+      <p class="data-employee result" id="labelNameAfp"></p>
+      <p class="data-employee result" id="labelComisionAfp"></p>
+    </div>
+    <br>
+    <legend class="section-title">WORKER'S INCOME</legend>
+    <div class="show-data">
+      <p class="data-employee result" id="labelSalary"></p>
+      <p class="data-employee result" id="labelFamilyAllowances"></p>
+      <p class="data-employee result" id="labelComissionsForWork"></p>
+      <p class="data-employee result" id="labelOthers"></p>
+    </div>
+    <br>
+    <legend class="section-title">OTHERS NON AFFECTED</legend>
+    <div class="show-data">
+      <p class="data-employee result" id="labelBonus"></p>
+      <p class="data-employee result" id="labelFithCategory"></p>
+      <p class="data-employee result" id="labelAdvance"></p>
+    </div>
+
+  </section>
+
+<div class="boton">
+  <h2 class="general-title">Generate payroll</h2>
+  <button id="generate">Generate</button>
+</div>
+  <div class="gridCabecera">
+      <p class="headPayroll " >DNI</p>
+      <p class="headPayroll " >SURNAME AND NAME</p>
+      <p class="headPayroll " >PENSION</p>
+      <p class="headPayroll " >AFP</p>
+      <p class="headPayroll " >COMISSION</p>
+      <p class="headPayroll " >SALARY</p>
+      <p class="headPayroll " >ALLOWANCES</p>
+      <p class="headPayroll " >JOB COMISSION</p>
+      <p class="headPayroll " >OTHERS</p>
+      <p class="headPayroll " >TOTAL SALARY</p>
+      <p class="headPayroll " >AFP APORTE</p>
+      <p class="headPayroll " >AFP SEGUROS</p>
+      <p class="headPayroll " >AFP COMISION</p>
+      <p class="headPayroll " >AFP TOTAL</p>
+      <p class="headPayroll " >ONP TOTAL</p>
+      <p class="headPayroll " >BONUS</p>
+      <p class="headPayroll " >FITH CATEGORY</p>
+      <p class="headPayroll " >ADVANCE</p>
+      <p class="headPayroll " >NETO A PAGAR</p>
+      <p class="headPayroll " >APORTE ESSALUD</p>
+  </div>
+
+<div class="gridPayroll">
+  <p class="headPayroll " id="labelDni1"></p>
+  <p class="headPayroll " id="labelName1"></p>
+  <p class="headPayroll " id="labelTipo1"></p>
+  <p class="headPayroll " id="labelNameAfp1"></p>
+  <p class="headPayroll " id="labelComisionAfp1"></p>
+  <p class="headPayroll " id="labelSalary1"></p>
+  <p class="headPayroll " id="labelFamilyAllowances1"></p>
+  <p class="headPayroll " id="labelComissionsForWork1"></p>
+  <p class="headPayroll " id="labelOthers1"></p>
+  <p class="headPayroll " id="labelTotalSalary1"></p>
+  <p class="headPayroll " id="labelAfpAporte1"></p>
+  <p class="headPayroll " id="labelAfpSeguros1"></p>
+  <p class="headPayroll " id="labelAfpComision1"></p>
+  <p class="headPayroll " id="labelAfpTotal1"></p>
+  <p class="headPayroll " id="labelOnpTotal1"></p>
+  <p class="headPayroll " id="labelBonus1"></p>
+  <p class="headPayroll " id="labelFithCategory1"></p>
+  <p class="headPayroll " id="labelAdvance1"></p>
+  <p class="headPayroll " id="labelNeto1"></p>
+  <p class="headPayroll" id="labelEssalud1"></p>
+</div>
+
+
+  <script src="./planillas.js"></script>
+</body>
+</html>

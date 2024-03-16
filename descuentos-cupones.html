@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo calcular precios con descuentos</title>
+    <link rel="stylesheet" href="descuentos.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="#">Start</a>
+                <ul class="menu-vertical">
+                    <li><a href="./index.html">Home</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basic Formulas</a>
+                <ul class="menu-vertical">
+                    <li><a href="./square.html">Square</a></li>
+                    <li><a href="./triangle.html">Triangle area & perimeter</a></li>
+                    <li><a href="./escalene.html">Escalene Triangle Heigh</a></li>
+                    <li><a href="./isosceles.html">Isosceles Triangle Heigh</a></li>
+                    <li><a href="./circle.html">Circle</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Discounts</a>
+                <ul class="menu-vertical">
+                    <li><a href="./descuentos.html">Price with discount</a></li>
+                    <li><a href="./descuentos-cupones.html">Coupons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basic Statistics</a>
+                <ul class="menu-vertical">
+                    <li><a href="./platzimath.html">Basics</a></li>
+                    <li><a href="./promedio-ponderado.html">Weighted average</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Salary Analysis</a>
+                <ul class="menu-vertical">
+                    <li><a href="./sal_anal_empleado.html">By employee</a></li>
+                    <li><a href="./sal_anal_general.html">In general</a></li>
+                    <li><a href="./sal_anal_company.html">By company</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Project</a>
+                <ul class="menu-vertical">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./planillas.html">Payroll</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+      </header>
+    <br><br>
+    <h1 class="general-title">Calculate price with discounts with Coupons</h1>
+    <section>
+        <div class="container">
+            <label for="price">Original Price</label>
+            <input  class="textbox" id="price" type="number">
+            <fieldset >
+                <legend>Choose your discount</legend>
+                <div class="groupDiscount">
+                    <label for="discount1">
+                    <input id="discount1" type="radio" name="discountPrice" value="20" checked>
+                    Summer 20%</label>
+                    <label for="discount2">
+                    <input id="discount2" type="radio" name="discountPrice" value="25">
+                    Fall 25%</label>
+                    <label for="discount3">
+                    <input id="discount3" type="radio" name="discountPrice" value="30" >
+                    Winter 30% </label>
+                </div>
+    
+            </fieldset>
+
+            <p id="result" class="showData">Price with discount: $ 0.00 <br> Discount: $ 0.00</p>
+        </div>
+    </section>
+    <section>
+       <p class="explanation">Made with an object</p> 
+        <div class="container">
+            <label for="price2">Original Price</label>
+            <input  class="textbox" id="price2" type="number">
+            <label for="txtCoupon">Coupon</label>
+            <input  class="textbox" id="txtCoupon" list="cupones">
+            <datalist id="cupones">
+                <option value="cmrvisaplatinum"></option>
+                <option value="cmrvisa"></option>
+                <option value="cmrpuntos"></option>
+                <option value="lunes"></option>
+                <option value="martes"></option>
+                <option value="miercoles"></option>
+                <option value="jueves"></option>
+                <option value="viernes"></option>
+                <option value="sabado"></option>
+                <option value="domingo"></option>
+                <option value="soat"></option>
+                <option value="tottusapp"></option>
+                <option value="navidad"></option>
+                <option value="peru"></option>
+                <option value="fiestas"></option>
+                <option value="halloween"></option>
+                <option value="mundial2026"></option>
+                <option value="mujer"></option>
+                <option value="hombre"></option>
+                <option value="gallo"></option>
+            </datalist>
+            <p id="result2" class="showData">Price with discount: $ 0.00 <br> Discount: $ 0.00</p>
+        </div>
+
+    </section>
+    <section>
+        
+        <p class="explanation">Made with an array of objects</p> 
+        <div class="container">
+            <label for="price3">Original Price</label>
+            <input  class="textbox" id="price3" type="number">
+            <label for="txtCoupon3">Coupon</label>
+            <input  class="textbox" id="txtCoupon3" list="cuponeslist">
+            <datalist id="cuponeslist">
+                <option value="coupon01"></option>
+                <option value="coupon02"></option>
+                <option value="coupon03"></option>
+                <option value="coupon04"></option>
+            </datalist>
+            <p id="result3" class="showData">Price with discount: $ 0.00 <br> Discount: $ 0.00</p>
+        </div>
+
+    </section>
+
+
+
+    <script src="descuentos-cupones.js"></script>
+</body>
+</html>

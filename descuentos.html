@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo calcular precios con descuentos</title>
+    <link rel="stylesheet" href="descuentos.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="#">Start</a>
+                <ul class="menu-vertical">
+                    <li><a href="./index.html">Home</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basic Formulas</a>
+                <ul class="menu-vertical">
+                    <li><a href="./square.html">Square</a></li>
+                    <li><a href="./triangle.html">Triangle area & perimeter</a></li>
+                    <li><a href="./escalene.html">Escalene Triangle Heigh</a></li>
+                    <li><a href="./isosceles.html">Isosceles Triangle Heigh</a></li>
+                    <li><a href="./circle.html">Circle</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Discounts</a>
+                <ul class="menu-vertical">
+                    <li><a href="./descuentos.html">Price with discount</a></li>
+                    <li><a href="./descuentos-cupones.html">Coupons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basic Statistics</a>
+                <ul class="menu-vertical">
+                    <li><a href="./platzimath.html">Basics</a></li>
+                    <li><a href="./promedio-ponderado.html">Weighted average</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Salary Analysis</a>
+                <ul class="menu-vertical">
+                    <li><a href="./sal_anal_empleado.html">By employee</a></li>
+                    <li><a href="./sal_anal_general.html">In general</a></li>
+                    <li><a href="./sal_anal_company.html">By company</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Project</a>
+                <ul class="menu-vertical">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./planillas.html">Payroll</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+      </header>
+    <br><br>
+    <h1 class="general-title">Percentages and discounts</h1>
+    <section>
+        <h2 class="section-title">Calculate price with discount</h2>
+        <div class="container">
+            <label for="price">Original Price</label>
+            <input class="textbox" id="price" type="number">
+            <label for="discount">Discount</label>
+            <input class="textbox" id="discount" type="number">
+            <p id="result">
+                Price with discount: $ 0.00 <br> Discount: $ 0.00
+            </p>
+        </div>
+
+    </section>
+    <script src="descuentos.js"></script>
+</body>
+</html>
